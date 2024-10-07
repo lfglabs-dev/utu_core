@@ -1,0 +1,7 @@
+[package]
+name = "utu_wasm_module"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+utu_core = { path = "../utu_core" }

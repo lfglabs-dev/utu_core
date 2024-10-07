@@ -1,0 +1,3 @@
+[workspace]
+members = ["utu_core", "utu_http_server", "utu_wasm_module"]
+resolver = "2"
