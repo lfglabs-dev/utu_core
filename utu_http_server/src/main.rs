@@ -1,3 +1,5 @@
+mod endpoints;
+mod errors;
 mod logger;
 mod state;
 mod utils;
@@ -15,13 +17,11 @@ use tokio::net::TcpListener;
 use tower_http::cors::{self, CorsLayer};
 use utils::routing::WithState;
 lazy_static::lazy_static! {
-pub static ref ROUTE_REGISTRY: Mutex<Vec<Box<dyn WithState>>> = Mutex::new(Vec::new());
-
-pub static ref SERVER_PORT: u16 = env::var("SERVER_PORT")
-    .expect("SERVER_PORT must be set")
-    .parse()
-    .expect("SERVER_PORT must be a valid u16");
-
+    pub static ref ROUTE_REGISTRY: Mutex<Vec<Box<dyn WithState>>> = Mutex::new(Vec::new());
+    pub static ref SERVER_PORT: u16 = env::var("SERVER_PORT")
+        .expect("SERVER_PORT must be set")
+        .parse()
+        .expect("SERVER_PORT must be a valid u16");
 }
 
 #[tokio::main]
