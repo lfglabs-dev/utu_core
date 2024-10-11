@@ -1,6 +1,6 @@
-# Utu
+# Utu Core
 
-Utu is a Rust-based project that connects Bitcoin and Ordinals clients to Starknet, creating secure proofs of Bitcoin transactions and events. Named after the ancient Sumerian sun god who was believed to see everything that happened in the world, Utu aims to provide transparency and security in the Bitcoin ecosystem by bridging these technologies.
+Built with Rust, Utu Core connects to Bitcoin and Ordinals clients allowing to create secure proofs of Bitcoin transactions and events for the Utu relaying contract. Named after the ancient Sumerian sun god who was believed to see everything that happened in the world, Utu aims to provide transparency and security in the Bitcoin ecosystem by bridging these technologies.
 
 ## Repository Structure
 
